@@ -1,0 +1,8 @@
+- cmd: save code
+- cmd: change orientation
+- cmd: change theme (dark/light)
+- drag-bar for col resizing
+- preview result size
+- footer text
+- syntax highlighting for code
+- auto run

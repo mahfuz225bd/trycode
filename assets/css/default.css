@@ -1,4 +1,5 @@
 @import url('./icon-bar.css');
+@import url('./btn.css');
 
 * {
     box-sizing: border-box;
@@ -15,13 +16,27 @@ body {
 }
 
 body {
-    width: 100%;
     height: 100vh;
 }
 
-.container {}
+.container {
+    width: 100%;
+}
 
 header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .btn {
+    margin-top: 6px;
+    height: 36px;
+}
+
+header nav {
+    overflow: hidden;
+    max-height: 48px;
+    width: 49.65vw;
     display: flex;
     justify-content: space-between;
 }
@@ -32,7 +47,7 @@ main {
     justify-items: center;
 }
 
-main section {
+main>section {
     width: 50%;
 }
 
@@ -64,7 +79,32 @@ main>section.right {
     background-color: #FFF;
 }
 
-header,
+.output-frame-size {
+    font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
+    margin-right: 9px;
+}
+
+.btn {
+    border: none;
+    color: #FFF;
+    padding: 6px 25px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+a:hover {
+    color: crimson;
+}
+
 footer {
     text-align: center;
 }
