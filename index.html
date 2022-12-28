@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3Schools Tryit Editor Clone</title>
     <link rel="stylesheet" href="./assets/css/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <textarea title="codeArea" id="codeArea" spellcheck="false"></textarea>
             </section>
             <section class="right">
-                <div id="outputArea"></div>
+                <iframe title="outputArea" id="outputArea"></iframe>
             </section>
         </main>
         <footer>Footer</footer>
@@ -33,8 +34,15 @@
             const voidSpaceBetween = header.clientHeight + footer.clientHeight
             main.style.height = window.innerHeight - voidSpaceBetween + 'px'
         }
-        window.addEventListener('load', autoAdjustMain)
-        window.addEventListener('resize', autoAdjustMain)
+        document.addEventListener('DOMContentLoaded', () => {
+            autoAdjustMain()
+            document.getElementById("codeArea").addEventListener('keyup', (e) => {
+                const outputArea = document.getElementById("outputArea")
+                outputArea.src = "data:text/html;charset=uft-8," + encodeURI(e.target.value)
+            })
+            window.addEventListener('resize', autoAdjustMain)
+        })
+
     </script>
 </body>
 

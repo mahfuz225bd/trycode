@@ -1,3 +1,5 @@
+@import url('./icon-bar.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,14 +19,12 @@ body {
     height: 100vh;
 }
 
-.container {
-}
+.container {}
 
 header {
     display: flex;
     justify-content: space-between;
 }
-
 
 main {
     display: flex;
