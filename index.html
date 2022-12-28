@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools Tryit Editor Clone</title>
+    <link rel="stylesheet" href="./assets/css/default.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <section class="left">Left</section>
+            <section class="right">Right</section>
+        </header>
+        <main>
+            <section class="left">
+                <textarea title="codeArea" id="codeArea" spellcheck="false"></textarea>
+            </section>
+            <section class="right">
+                <div id="outputArea"></div>
+            </section>
+        </main>
+        <footer>Footer</footer>
+    </div>
+    <script>
+        const autoAdjustMain = () => {
+            const header = document.querySelector('header')
+            const footer = document.querySelector('footer')
+            const main = document.querySelector('main')
+            const voidSpaceBetween = header.clientHeight + footer.clientHeight
+            main.style.height = window.innerHeight - voidSpaceBetween + 'px'
+        }
+        window.addEventListener('load', autoAdjustMain)
+        window.addEventListener('resize', autoAdjustMain)
+    </script>
+</body>
+
+</html>
