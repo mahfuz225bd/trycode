@@ -46,12 +46,18 @@ The content of the body element is displayed in your browser.
 
     // cmdChangeOrientation
     document.getElementById('cmdChangeOrientation').addEventListener('click', () => {
-        if (main.classList.contains('view-orientation-2')) {
-            main.classList.remove('view-orientation-2')
-        } else {
-            main.classList.add('view-orientation-2')
-        }
+        main.classList.toggle('view-orientation-2')
+    })
+
+    // cmdChangeTheme
+    document.getElementById('cmdChangeTheme').addEventListener('click', () => {
+        const container = document.querySelector('.container')
+        container.classList.toggle('dark')
     })
 
     window.addEventListener('resize', autoAdjustMain)
 })
+
+const pending = () => {
+    alert('!!!Pending!!!')
+}

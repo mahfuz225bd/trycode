@@ -22,6 +22,26 @@ body {
     width: 100%;
 }
 
+/* change to dark theme */
+.container.dark {
+    background-color: #38444d;
+}
+
+.container.dark nav a:hover {
+    background-color: #ccc;
+    color: #757575;
+}
+
+.container.dark,
+.container.dark a {
+    color: #ddd;
+}
+
+.container.dark #codeArea {
+    background-color: #15202b;
+    color: #E7E9EB;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -51,11 +71,11 @@ main>section {
 }
 
 main>section.left {
-    padding: 1px 5px 10px 10px;
+    padding: 1px 5px 1px 10px;
 }
 
 main>section.right {
-    padding: 1px 10px 10px 5px;
+    padding: 1px 10px 1px 5px;
 }
 
 /* For changing orientation */
@@ -70,6 +90,10 @@ main.view-orientation-2>section {
 
 main.view-orientation-2>section {
     padding: 1px 10px 10px 10px;
+}
+
+main.view-orientation-2>section.right {
+    padding-bottom: 1px;
 }
 
 #codeArea,
@@ -111,13 +135,16 @@ main.view-orientation-2>section {
 a {
     text-decoration: none;
     color: #444;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
-a:hover {
+a:hover,
+.container.dark a:not(header a):hover {
     color: crimson;
 }
 
 footer {
     text-align: center;
+    font-size: medium;
+    padding-bottom: 9px;
 }
