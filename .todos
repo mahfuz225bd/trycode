@@ -1,5 +1,4 @@
-- cmd: save code
-- cmd: change orientation
+- cmd: download code
 - cmd: change theme (dark/light)
 - drag-bar for col resizing
 - preview result size
