@@ -1,6 +1,7 @@
 const main = document.querySelector('main')
 const cmdRunCode = document.getElementById("cmdRunCode")
 const codeArea = document.getElementById("codeArea")
+const outputArea = document.getElementById("outputArea")
 
 const autoAdjustMain = () => {
     const header = document.querySelector('header')
@@ -11,7 +12,6 @@ const autoAdjustMain = () => {
 
 // Show output to #outputArea
 const showOutput = (value) => {
-    const outputArea = document.getElementById("outputArea")
     outputArea.src = "data:text/html;charset=uft-8," + encodeURI(value)
 }
 
@@ -40,6 +40,7 @@ The content of the body element is displayed in your browser.
     //     }
     // })
 
+    // cmdRunCode
     cmdRunCode.addEventListener('click', () => {
         showOutput(codeArea.value)
     })
