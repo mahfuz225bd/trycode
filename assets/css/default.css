@@ -71,11 +71,11 @@ main>section {
 }
 
 main>section.left {
-    margin: 1px 5px 1px 10px;
+    padding: 1px 5px 1px 10px;
 }
 
 main>section.right {
-    margin: 1px 10px 1px 5px;
+    padding: 1px 10px 1px 5px;
 }
 
 /* For changing orientation */
@@ -83,21 +83,23 @@ main.view-orientation-2 {
     flex-direction: column;
 }
 
-main.view-orientation-2>section {
+main.view-orientation-2>section.left,
+main.view-orientation-2>section.right {
     width: 100%;
     height: 50%;
 }
 
 main.view-orientation-2>section {
-    margin: 1px 10px 10px 10px;
+    padding: 1px 10px 10px 10px;
 }
 
 main.view-orientation-2>section.right {
-    margin-bottom: 1px;
+    padding-bottom: 1px;
 }
 
 #codeArea,
 #outputArea {
+    display: block;
     width: 100%;
     height: 100%;
     padding: 8px;
@@ -146,4 +148,39 @@ footer {
     text-align: center;
     font-size: medium;
     padding-bottom: 9px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        width: initial;
+    }
+
+    header .btn {
+        margin-top: initial;
+        display: inline;
+    }
+
+    header>section {
+        width: 100%;
+        height: 50%;
+        padding: 1px 10px 10px 10px;
+    }
+
+    header>section.left {
+        padding-bottom: 0;
+    }
+
+    header>section.right {
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>section.right {
+        margin-left: 9px;
+    }
 }
