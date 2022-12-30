@@ -16,7 +16,7 @@ const showOutput = (value) => {
 }
 
 // while document is ready
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     autoAdjustMain()
 
     // Load init code
