@@ -3,7 +3,13 @@ const cmdRunCode = document.getElementById("cmdRunCode")
 const codeArea = document.getElementById("codeArea")
 const outputArea = document.getElementById("outputArea")
 
-const autoAdjustMain = () => {
+const responsive = () => {
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        main.classList.add('view-orientation-2')
+    } else {
+        main.classList.remove('view-orientation-2')
+    }
+
     const header = document.querySelector('header')
     const footer = document.querySelector('footer')
     const voidSpaceBetween = header.clientHeight + footer.clientHeight
@@ -17,7 +23,7 @@ const showOutput = (value) => {
 
 // while document is ready
 window.addEventListener('DOMContentLoaded', () => {
-    autoAdjustMain()
+    responsive()
 
     // Load init code
     codeArea.innerHTML = `&lt;!DOCTYPE html&gt;
@@ -56,7 +62,7 @@ The content of the body element is displayed in your browser.
         container.classList.toggle('dark')
     })
 
-    window.addEventListener('resize', autoAdjustMain)
+    window.addEventListener('resize', responsive)
 })
 
 const pending = () => {

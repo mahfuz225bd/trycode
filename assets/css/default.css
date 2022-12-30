@@ -71,11 +71,11 @@ main>section {
 }
 
 main>section.left {
-    padding: 1px 5px 1px 10px;
+    margin: 1px 5px 1px 10px;
 }
 
 main>section.right {
-    padding: 1px 10px 1px 5px;
+    margin: 1px 10px 1px 5px;
 }
 
 /* For changing orientation */
@@ -89,11 +89,11 @@ main.view-orientation-2>section {
 }
 
 main.view-orientation-2>section {
-    padding: 1px 10px 10px 10px;
+    margin: 1px 10px 10px 10px;
 }
 
 main.view-orientation-2>section.right {
-    padding-bottom: 1px;
+    margin-bottom: 1px;
 }
 
 #codeArea,
