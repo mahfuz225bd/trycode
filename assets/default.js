@@ -1,7 +1,7 @@
 const main = document.querySelector('main')
 const cmdRunCode = document.getElementById("cmdRunCode")
-const codeArea = document.getElementById("codeArea")
-const outputArea = document.getElementById("outputArea")
+const inputCode = document.getElementById("inputCode")
+const outputCode = document.getElementById("outputCode")
 
 const responsive = () => {
     if (window.matchMedia("(max-width: 600px)").matches) {
@@ -16,9 +16,9 @@ const responsive = () => {
     main.style.height = window.innerHeight - voidSpaceBetween + 'px'
 }
 
-// Show output to #outputArea
+// Show output to #outputCode
 const showOutput = (value) => {
-    outputArea.srcdoc = value
+    outputCode.srcdoc = value
 }
 
 // while document is ready
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     responsive()
 
     // Load init code
-    codeArea.innerHTML = `&lt;!DOCTYPE html&gt;
+    inputCode.innerHTML = `&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 &lt;body&gt;
@@ -37,7 +37,7 @@ The content of the body element is displayed in your browser.
 
     // document.getElementById('chkAutoRun').addEventListener('change', e => {
     //     if (e.target.checked) {
-    //         codeArea.addEventListener('keyup', e => {
+    //         inputCode.addEventListener('keyup', e => {
     //             showOutput(e.target.value)
     //         })
     //         cmdRunCode.disabled = true
@@ -48,7 +48,7 @@ The content of the body element is displayed in your browser.
 
     // cmdRunCode
     cmdRunCode.addEventListener('click', () => {
-        showOutput(codeArea.value)
+        showOutput(inputCode.value)
     })
 
     // cmdChangeOrientation

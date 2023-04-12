@@ -37,7 +37,7 @@ body {
     color: #ddd;
 }
 
-.container.dark #codeArea {
+.container.dark #inputCode {
     background-color: #15202b;
     color: #E7E9EB;
 }
@@ -97,8 +97,8 @@ main.view-orientation-2>section.right {
     padding-bottom: 1px;
 }
 
-#codeArea,
-#outputArea {
+#inputCode,
+#outputCode {
     display: block;
     width: 100%;
     height: 100%;
@@ -107,14 +107,14 @@ main.view-orientation-2>section.right {
     border: none;
 }
 
-#codeArea {
+#inputCode {
     font-family: consolas, Menlo, "courier new", monospace;
     font-size: 15px;
     resize: none;
     outline: none;
 }
 
-#outputArea {
+#outputCode {
     background-color: #FFF;
 }
 
