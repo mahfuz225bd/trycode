@@ -1,6 +1,6 @@
-- cmd: download code
 - drag-bar for col resizing
 - preview result size
 - footer text
 - syntax highlighting for code
 - auto run
+- fix: <style></style> is not working as code

@@ -68,3 +68,11 @@ The content of the body element is displayed in your browser.
 const pending = () => {
     alert('!!!Pending!!!')
 }
+
+const download = (filename, type, data) => {
+    const a = document.createElement('a');
+    a.download = filename;
+    const blob = new Blob([data], { type: type });
+    a.href = URL.createObjectURL(blob);
+    a.click();
+}
