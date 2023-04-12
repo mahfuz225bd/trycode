@@ -18,7 +18,9 @@ const responsive = () => {
 
 // Show output to #outputCode
 const showOutput = (value) => {
-    const iframeW = (outputCode.contentWindow) ? outputCode.contentWindow : (outputCode.contentDocument.document) ? outputCode.contentDocument.document : outputCode.contentDocument;
+    const iframeW = (outputCode.contentWindow) ? outputCode.contentWindow 
+                    : (outputCode.contentDocument.document) ? outputCode.contentDocument.document 
+                        : outputCode.contentDocument;
     iframeW.document.open();
     iframeW.document.write(value);
     iframeW.document.close();
