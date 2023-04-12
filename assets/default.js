@@ -18,7 +18,7 @@ const responsive = () => {
 
 // Show output to #outputArea
 const showOutput = (value) => {
-    outputArea.src = "data:text/html;charset=uft-8," + encodeURI(value)
+    outputArea.srcdoc = value
 }
 
 // while document is ready
