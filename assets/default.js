@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     document.getElementById('cmdDownload').addEventListener('click', () => {
-        const fileName = prompt("Enter File Name:")
+        const fileName = prompt("Enter File Name:") || 'index.html'
         download(fileName, "text/html", inputCode.value)
     })
 
