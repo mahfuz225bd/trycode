@@ -18,7 +18,16 @@ const responsive = () => {
 
 // Show output to #outputCode
 const showOutput = (value) => {
-    outputCode.srcdoc = value
+    const iframeW = (outputCode.contentWindow) ? outputCode.contentWindow : (outputCode.contentDocument.document) ? outputCode.contentDocument.document : outputCode.contentDocument;
+    iframeW.document.open();
+    iframeW.document.write(value);
+    iframeW.document.close();
+
+    // (To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+    if (iframeW.document.body && !iframeW.document.body.isContentEditable) {
+        iframeW.document.body.contentEditable = true;
+        iframeW.document.body.contentEditable = false;
+    }
 }
 
 // while document is ready
