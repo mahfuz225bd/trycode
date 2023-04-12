@@ -1,5 +1,6 @@
 - drag-bar for col resizing
 - preview result size
 - footer text
-- syntax highlighting for code
+- syntax highlighting for code (suggestion: codemirror)
 - auto run
+- tab action on code input

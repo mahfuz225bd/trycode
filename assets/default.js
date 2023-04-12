@@ -35,11 +35,15 @@ window.addEventListener('DOMContentLoaded', () => {
     responsive()
 
     // Load init code
-    inputCode.innerHTML = `&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+    inputCode.innerHTML = `&lt;!DOCTYPE&nbsp;html&gt;
+&lt;html&nbsp;lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
 
 &lt;body&gt;
-The content of the body element is displayed in your browser.
+    &lt;p&gt;The&nbsp;content&nbsp;of&nbsp;the&nbsp;body&nbsp;element&nbsp;is&nbsp;displayed&nbsp;in&nbsp;your&nbsp;browser.&lt;/p&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;`;
