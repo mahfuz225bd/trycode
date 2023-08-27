@@ -7,3 +7,7 @@ Firstly, install all dependencies with:
 Then, run with command:
 
 > yarn tauri dev
+
+To build:
+
+> yarn tauri build
