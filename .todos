@@ -1,5 +1,5 @@
 - drag-bar for col resizing
-- preview result size
+- preview result size ("width x height" format)
 - footer text
 - syntax highlighting for code (suggestion: codemirror)
 - auto run
