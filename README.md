@@ -1,4 +1,4 @@
-# TryIt Editor Desktop Version
+# TryIt Editor Desktop
 
 This is a unofficial desktop version of tryit editor.
 
