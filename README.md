@@ -1,4 +1,6 @@
-# TryIt Editor Clone
+# TryIt Editor Desktop Version
+
+This is a unofficial desktop version of tryit editor.
 
 Firstly, install all dependencies with:
 
