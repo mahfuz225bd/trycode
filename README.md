@@ -103,7 +103,7 @@ Here are some features that I plan to include for the future releases:
 
 - Optional login/logout for well managing
 
-## TODOS for Before Next Release
+## TODOs for Before Next Release
 
 - Revise whole code of this editor and re-write optimized version
 
