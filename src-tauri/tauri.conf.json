@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "TryIt",
-    "version": "1.0.0-alpha"
+    "version": "1.0.0-0"
   },
   "tauri": {
     "allowlist": {
@@ -21,7 +21,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "hanami",
+      "identifier": "com.example.tryit",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
