@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3Schools Tryit Editor Clone</title>
+
+    <title>TryIt</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../src-tauri/icons/32x32.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../src-tauri/icons/128x128.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="../src-tauri/icons/128x128@2x.png">
+    <link rel="apple-touch-icon" href="../src-tauri/icons/icon.icns">
+    <link rel="shortcut icon" href="../src-tauri/icons/icon.ico">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/css/default.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
@@ -16,22 +25,25 @@
             <section class="left">
                 <nav>
                     <span>
-                        <a href="#" title="Download Code" id="cmdDownload"><i class="fa-solid fa-download"
-                                aria-hidden="true"></i></a>
-                        <a href="#" title="Change Orientation" id="cmdChangeOrientation"><i class="fa-solid fa-rotate"
-                                aria-hidden="true"></i></a>
-                        <a href="#" title="Change Theme" id="cmdChangeTheme"><i class="fa-solid fa-adjust"
-                                aria-hidden="true"></i></a>
+                        <a href="#" title="Download Code" id="cmdDownload">
+                            <img src="./assets/icons/download.svg" alt="Download Code">
+                        </a>
+                        <a href="#" title="Change Orientation" id="cmdChangeOrientation">
+                            <img src="./assets/icons/rotate.svg" alt="Change Orientation">
+                        </a>
+                        <a href="#" title="Switch to Dark Theme" id="cmdChangeTheme">
+                            <img src="./assets/icons/circle-half-stroke.svg" alt="Toggle Dark/Light">
+                        </a>
                     </span>
                     <span>
-                        <!-- <input type="checkbox" id="chkAutoRun">
+                        <!-- <input type="checkbox" id="chkAutoRun"> 
                         <label for="chkAutoRun">Auto Run</label> -->
                         <button class="btn success" id="cmdRunCode" type="button">Run ❯</button>
                     </span>
                 </nav>
             </section>
             <section class="right">
-                <span class="output-frame-size">Result Size: {W} x {H}</span>
+                <output class="output-frame-size">Result Size: {W} x {H}</output>
                 <a href="https://github.com/mahfuz225bd/w3schools-tryit-editor-clone" rel="noopener" target="_blank"
                     style="margin-right:11px;" class="btn success"><i class="fa-solid fa-code"></i> Get Source
                     Code</a>

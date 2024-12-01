@@ -1,17 +1,23 @@
 nav a {
-    margin-top: -4px;
+    text-decoration: none;
+    display: block;
     float: left;
-    color: #999999;
-    text-align: center;
+    width: 52px;
+    height: auto;
+    margin-top: -8px;
     padding-top: 12px !important;
     padding-right: 10px !important;
     padding-bottom: 12px !important;
     padding-left: 10px !important;
-    text-decoration: none;
+    text-align: center;
     font-size: 23px;
-    display: block;
-    width: 52px;
-    height: auto;
+    color: #999999;
+}
+
+nav a img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 nav .btn {

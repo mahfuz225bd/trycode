@@ -1,28 +1,38 @@
 const main = document.querySelector("main");
+const container = document.querySelector(".container");
 const cmdRunCode = document.getElementById("cmdRunCode");
 const inputCode = document.getElementById("inputCode");
 const outputCode = document.getElementById("outputCode");
+const cmdDownload = document.getElementById("cmdDownload");
+const cmdChangeOrientation = document.getElementById("cmdChangeOrientation");
+const cmdChangeTheme = document.getElementById("cmdChangeTheme");
+
+const initCode = `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p>The content of the body element is displayed in your browser.</p>
+</body>
+
+</html>`;
 
 // While document is ready
 window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    cmdRunCode.click();
+  });
+
   // Update the initial result size after loading the DOM
   updateFrameSize();
 
   responsive();
 
   // Load initial code
-  inputCode.innerHTML = `&lt;!DOCTYPE&nbsp;html&gt;
-&lt;html&nbsp;lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-    &lt;title&gt;&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;p&gt;The&nbsp;content&nbsp;of&nbsp;the&nbsp;body&nbsp;element&nbsp;is&nbsp;displayed&nbsp;in&nbsp;your&nbsp;browser.&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;`;
+  inputCode.innerHTML = initCode;
 
   // document.getElementById('chkAutoRun').addEventListener('change', e => {
   //     if (e.target.checked) {
@@ -41,22 +51,25 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // Download the code when the download button is clicked
-  document.getElementById("cmdDownload").addEventListener("click", () => {
+  cmdDownload.addEventListener("click", () => {
     const fileName = prompt("Enter File Name:") || "index.html";
     download(fileName, "text/html", inputCode.value);
   });
 
   // Change orientation of the main section
-  document
-    .getElementById("cmdChangeOrientation")
-    .addEventListener("click", () => {
-      main.classList.toggle("view-orientation-2");
-    });
+  cmdChangeOrientation.addEventListener("click", () => {
+    main.classList.toggle("view-orientation-2");
+  });
 
   // Change theme of the container
-  document.getElementById("cmdChangeTheme").addEventListener("click", () => {
-    const container = document.querySelector(".container");
-    container.classList.toggle("dark");
+  cmdChangeTheme.addEventListener("click", () => {
+    if (!container.classList.contains("dark")) {
+      cmdChangeTheme.title = "Switch to Light Theme";
+      container.classList.add("dark");
+    } else {
+      cmdChangeTheme.title = "Switch to Dark Theme";
+      container.classList.remove("dark");
+    }
   });
 
   // Adjust the layout on window resize \w updating frame size

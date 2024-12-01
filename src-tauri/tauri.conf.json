@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "TryIt Editor 2",
-    "version": "0.0.0"
+    "productName": "TryIt",
+    "version": "1.0.0-alpha"
   },
   "tauri": {
     "allowlist": {
@@ -51,7 +51,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "tryit-editor-clone",
+        "title": "TryIt",
         "width": 1000,
         "height": 800
       }

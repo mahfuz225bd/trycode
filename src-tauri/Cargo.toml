@@ -1,8 +1,8 @@
 [package]
-name = "tryit-editor-clone"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "TryIt"
+version = "1.0.0-alpha"
+description = "A simplest HTML code runner for practicing."
+authors = ["Muhammad Sultan Al Mahfuz"]
 license = ""
 repository = ""
 edition = "2021"
