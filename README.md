@@ -4,15 +4,37 @@ This is a unofficial desktop version of w3school tryit editor developed for prac
 
 Firstly, install all dependencies with:
 
-> npm install
+```bash
+npm install
+```
 
 Then, run with command:
 
-> npm run tauri dev
+```bash
+npm run tauri dev
+```
 
 To build:
 
-> npm run tauri build
+```bash
+npm run tauri build
+```
+
+But, before running the build command, make sure that your PC has Rust and Cargo installed. To check if Rust and Cargo are installed, run the command:
+
+```bash
+rustc --version
+cargo --version
+```
+
+You should see output similar to:
+
+```
+rustc 1.65.0 (897e37553 2022-11-02)
+cargo 1.65.0 (0a5e40e37 2022-11-02)
+```
+
+If output will not be shown, it means your PC has not Rust and Cargo installed, and you should install it. For installing, follow the notes about [rust installation](https://www.rust-lang.org/tools/install).
 
 After building, a binary file in `src-tauri/target/release` will be created.
 
