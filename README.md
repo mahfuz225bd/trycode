@@ -34,9 +34,7 @@ rustc 1.65.0 (897e37553 2022-11-02)
 cargo 1.65.0 (0a5e40e37 2022-11-02)
 ```
 
-If output will not be shown, it means your PC has not Rust and Cargo installed, and you should install it. For installing, follow the notes about [rust installation](https://www.rust-lang.org/tools/install).
-
-After building, a binary file in `src-tauri/target/release` will be created.
+If output is not displayed, Rust and Cargo is not installed on your computer; you need install it. For installation, follow to the [rust installation](https://www.rust-lang.org/tools/install) notes. A binary file in `src-tauri/target/release` will be generated once building is accomplished.
 
 ## File/Folder Structure
 
