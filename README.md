@@ -127,4 +127,4 @@ Here are some features that I plan to include for the future releases:
 
 - Revise whole code of this editor and re-write optimized version
 
-- Try to add more features as possible, which should at least be for HTML or HTML-CSS-JS
+- Try to add more features as possible, which should be atleast for HTML or HTML-CSS-JS
