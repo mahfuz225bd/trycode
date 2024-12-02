@@ -127,4 +127,6 @@ Here are some features that I plan to include for the future releases:
 
 - Revise whole code of this editor and re-write optimized version
 
-- Try to add more features as possible, which should be atleast for HTML or HTML-CSS-JS
+- Remove title text for both textarea and iframe
+
+- Try to add more features as possible, which should be at least for HTML or HTML-CSS-JS
