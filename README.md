@@ -43,7 +43,8 @@ To introduce the necessary files and folders that will support future updates of
 ```
 tryit/
 ├── binaries/                        # Contains the binary files generated after building
-│   ├── TryIt_x64.exe                # The built executable file for 64-bit Windows
+│   ├── TryIt_WIN_x64.exe            # The built executable file for 64-bit Windows
+│   ├── TryIt_MacOS_x64.exe          # The built executable file for 64-bit MacOS
 ├── src/                             # Main source code of the application
 │   ├── .vscode/                     # Contains project-specific settings and configurations for Visual Studio Code, including preferences, tasks, and debug configurations.
 │   ├── assets/                      # Contains assets like CSS and icons used in the application
