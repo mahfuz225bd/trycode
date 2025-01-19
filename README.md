@@ -1,6 +1,6 @@
 # TryCode
 
-This is a unofficial desktop version of w3school trycode editor developed for practicing html coding. I have plan for adding more features like file system or others with other programming facilities.
+This alternative of W3Schools' Tryit editor is a desktop application that is developed for practicing HTML coding. I have a plan for adding more features, like a file system or others with other programming facilities.
 
 Firstly, install all dependencies with:
 
