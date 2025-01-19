@@ -124,7 +124,7 @@ Here are some features that I plan to include for the future releases:
 
 - Optional login/logout for well managing
 
-## TODOs for Before Next Release
+## TODOs Before Releasing the Next Version
 
 - Revise whole code of this editor and re-write optimized version
 
