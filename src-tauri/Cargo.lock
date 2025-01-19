@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "TryIt"
+name = "trycode"
 version = "1.0.0-alpha"
 dependencies = [
  "serde",

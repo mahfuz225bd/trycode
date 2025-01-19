@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "TryIt",
+    "productName": "trycode",
     "version": "1.0.0-0"
   },
   "tauri": {
@@ -21,7 +21,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.example.tryit",
+      "identifier": "com.example.trycode",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -33,8 +33,8 @@
       "externalBin": [],
       "copyright": "",
       "category": "DeveloperTool",
-      "shortDescription": "An unofficial desktop version of the W3Schools TryIt Editor for practicing HTML coding.",
-      "longDescription": "This is an unofficial desktop version of the W3Schools TryIt Editor, developed to provide a convenient environment for practicing HTML coding. Users can experiment with HTML code and immediately see the results, making it a useful tool for learning and testing. Future plans include adding more features, such as file system integration and support for additional programming languages, to further enhance the development experience.",
+      "shortDescription": "An unofficial desktop version of the W3Schools trycode Editor for practicing HTML coding.",
+      "longDescription": "This is an unofficial desktop version of the W3Schools trycode Editor, developed to provide a convenient environment for practicing HTML coding. Users can experiment with HTML code and immediately see the results, making it a useful tool for learning and testing. Future plans include adding more features, such as file system integration and support for additional programming languages, to further enhance the development experience.",
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
@@ -51,7 +51,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "TryIt",
+        "title": "trycode",
         "width": 1000,
         "height": 800
       }

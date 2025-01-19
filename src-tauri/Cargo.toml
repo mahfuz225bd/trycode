@@ -1,5 +1,5 @@
 [package]
-name = "TryIt"
+name = "trycode"
 version = "1.0.0-alpha"
 description = "A simplest HTML code runner for practicing."
 authors = ["Muhammad Sultan Al Mahfuz"]

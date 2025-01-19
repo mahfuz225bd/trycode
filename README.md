@@ -1,6 +1,6 @@
-# TryIt
+# trycode
 
-This is a unofficial desktop version of w3school tryit editor developed for practicing html coding. I have plan for adding more features like file system or others with other programming facilities.
+This is a unofficial desktop version of w3school trycode editor developed for practicing html coding. I have plan for adding more features like file system or others with other programming facilities.
 
 Firstly, install all dependencies with:
 
@@ -41,10 +41,10 @@ If output is not displayed, Rust and Cargo is not installed on your computer; yo
 To introduce the necessary files and folders that will support future updates of the app, as outlined below in a structured format:
 
 ```
-tryit/
+trycode/
 ├── binaries/                        # Contains the binary files generated after building
-│   ├── TryIt_WIN_x64.exe            # The built executable file for 64-bit Windows
-│   ├── TryIt_MacOS_x64.exe          # The built executable file for 64-bit MacOS
+│   ├── trycode_WIN_x64.exe            # The built executable file for 64-bit Windows
+│   ├── trycode_MacOS_x64.exe          # The built executable file for 64-bit MacOS
 ├── src/                             # Main source code of the application
 │   ├── .vscode/                     # Contains project-specific settings and configurations for Visual Studio Code, including preferences, tasks, and debug configurations.
 │   ├── assets/                      # Contains assets like CSS and icons used in the application
@@ -82,11 +82,13 @@ Here are some features that I plan to include for the future releases:
 - Console for JS code
 
 - Along with only HTML, HTML-CSS-JS like codepen.io
-    - Downloading whole project
-    - Saving the whole project as a project file
+
+  - Downloading whole project
+  - Saving the whole project as a project file
 
 - Allow adding multiple files with a tree-structured view of files/folders.
-    - Tab for the switching
+
+  - Tab for the switching
 
 - Drag and drop to open a file to edit
 
@@ -107,20 +109,23 @@ Here are some features that I plan to include for the future releases:
 - Menubar
 
 - Status bar
-    - Line, Col
-    - Character Counts
-    - Zoom values of code and output
+
+  - Line, Col
+  - Character Counts
+  - Zoom values of code and output
 
 - Settings
-    - Toggle on/off syntax highlighting
-    - Managing versions and variants (authors) of the platforms
+
+  - Toggle on/off syntax highlighting
+  - Managing versions and variants (authors) of the platforms
 
 - Allowing to open and publish of a project of a git repository
 
 - Web publishing
-    - Free or limited free publishing with a subdomain
-    - Free publishing as a GitHub page
-    - Publishing directly like FileZilla which should be as easy as possible
+
+  - Free or limited free publishing with a subdomain
+  - Free publishing as a GitHub page
+  - Publishing directly like FileZilla which should be as easy as possible
 
 - Optional login/logout for well managing
 
