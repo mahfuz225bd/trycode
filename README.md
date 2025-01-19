@@ -1,4 +1,4 @@
-# trycode
+# TryCode
 
 This is a unofficial desktop version of w3school trycode editor developed for practicing html coding. I have plan for adding more features like file system or others with other programming facilities.
 
@@ -43,8 +43,7 @@ To introduce the necessary files and folders that will support future updates of
 ```
 trycode/
 ├── binaries/                        # Contains the binary files generated after building
-│   ├── trycode_WIN_x64.exe            # The built executable file for 64-bit Windows
-│   ├── trycode_MacOS_x64.exe          # The built executable file for 64-bit MacOS
+│   ├── TryCode_WIN_x64.exe          # The built executable file for 64-bit Windows
 ├── src/                             # Main source code of the application
 │   ├── .vscode/                     # Contains project-specific settings and configurations for Visual Studio Code, including preferences, tasks, and debug configurations.
 │   ├── assets/                      # Contains assets like CSS and icons used in the application
